@@ -18,11 +18,11 @@ def cost_of_fruits(fruit, quantity):
     for key in price_list.keys():
         if key == fruit:
             cost = quantity_list[key]*price_list[key]
+            return cost
             break
 
-    print("cost of ", quantity, fruit, "=", cost)
-    return [fruit,cost]
-
+   # print("cost of ", quantity, fruit, "=", cost)
+   
 
 def main():
 
