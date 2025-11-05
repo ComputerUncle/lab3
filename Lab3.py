@@ -5,6 +5,10 @@ SORT_DESCENDING = 1
 
 
 def bubble_sort(arr, sorting_order):
+   if not arr:
+    return 0
+
+   else:
     isitdigit = True
     # Copy input list to results list
     arr_result = arr.copy()
@@ -41,8 +45,6 @@ def bubble_sort(arr, sorting_order):
                     arr_result = []
      else: 
       arr_result=2
-    elif n == 0: #REQ-04
-     arr_result = 0
 
 
     else: #REQ-03

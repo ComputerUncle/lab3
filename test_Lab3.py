@@ -28,3 +28,13 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_moreten():
+ input_arr = [1,2,3,4,5,6,7,8,9,10,11]
+ assert (Lab3.bubble_sort(input_arr,0) == 1)
+def test_float():
+ input_arr = [1,2,3,4,5.88]
+ assert (Lab3.bubble_sort(input_arr,0) == 2)
+def test_zero():
+ input_arr = []
+ assert (Lab3.bubble_sort(input_arr,0) == 0)
